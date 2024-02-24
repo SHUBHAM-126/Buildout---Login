@@ -29,15 +29,11 @@ function App() {
 
       {!IsLoggedIn && (
         <form onSubmit={handleSubmit}>
-          <label htmlFor='username'>
-            <span>Username:</span>
-            <input name='username' type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder='username' required />
-          </label>
+          <label htmlFor='username'>Username:</label>
+          <input name='username' type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder='username' required />
           <br />
-          <label htmlFor='password'>
-            <span>Password:</span>
-            <input name='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password' required />
-          </label>
+          <label htmlFor='password'>Password:</label>
+          <input name='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='password' required />
           <br />
           <button type="submit">Submit</button>
         </form>
